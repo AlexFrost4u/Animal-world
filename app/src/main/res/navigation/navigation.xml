@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/animal_Description2">
+    <fragment
+        android:id="@+id/animal_Description2"
+        android:name="com.example.animalworld.animaldetail.Animal_Description"
+        android:label="Animal_Description" >
+        <action
+            android:id="@+id/action_animal_Description2_to_main_Menu2"
+            app:destination="@id/main_Menu2" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_Menu2"
+        android:name="com.example.animalworld.mainmenu.Main_Menu"
+        android:label="Main_Menu" >
+        <action
+            android:id="@+id/action_main_Menu2_to_animal_Description2"
+            app:destination="@id/animal_Description2" />
+    </fragment>
+</navigation>
